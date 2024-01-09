@@ -20,7 +20,7 @@ export default function Home() {
                 </button>
             </Link>
         </div>
-        <div className=''>
+        <div >
             <CompareSlider />
         </div>
     </main>
