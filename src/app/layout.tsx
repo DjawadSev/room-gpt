@@ -25,14 +25,12 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en">
       <body className={inter.className +  "bg-white flex flex-col min-h-screen container mx-auto "}>
-        <header>
+        <header className='w-full'>
           <div className='container border-b p-5 mx-auto flex items-center justify-between'>
             <Link href={"/"} className='flex items-center gap-3'>
               <Image src={couch} alt='couch' width={50} height={50} />
               <h3 className='text-black md:text-3xl text-2xl font-bold '>Room GPT</h3>
             </Link>
-            {/*user info component */}
-
             <UserInf/>
           </div>
         </header>
@@ -40,5 +38,5 @@ export default function RootLayout({
       </body>
     </html>
     </ClerkProvider>
-  )
+  );
 }
